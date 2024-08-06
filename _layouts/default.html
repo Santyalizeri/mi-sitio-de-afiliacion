@@ -1,25 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tu sitio de afiliación con los mejores productos y ofertas">
+    <meta name="keywords" content="afiliación, productos, ofertas, Amazon, recomendaciones">
+    <meta name="author" content="Santiago Alizeri">
+    <title>Mi Sitio de Afiliación</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: #fff;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <ul>
-        <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    {{ content }}
-  </main>
-  <footer>
-    <p>© {{ site.time | date: '%Y' }} {{ site.title }}.</p>
-  </footer>
+    <header>
+        <h1>Bienvenido a Mi Sitio de Afiliación</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Productos Recomendados</h2>
+            <div class="product">
+                <h3>Producto 1</h3>
+                <p>Descripción del producto 1. Este es un producto excelente que te recomendamos por sus características y valor.</p>
+                <a href="https://www.amazon.com/dp/ASIN" target="_blank">Compra aquí</a>
+            </div>
+            <div class="product">
+                <h3>Producto 2</h3>
+                <p>Descripción del producto 2. Este producto es conocido por su durabilidad y rendimiento.</p>
+                <a href="https://www.amazon.com/dp/ASIN" target="_blank">Compra aquí</a>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Sitio de Afiliación. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
