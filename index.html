@@ -3,60 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio de Afiliación de Amazon</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Promociona los Servicios de Amazon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #232f3e;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .service {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .service h2 {
+            color: #232f3e;
+        }
+        .service p {
+            line-height: 1.6;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #ff9900;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #e68a00;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a Mi Sitio de Afiliación de Amazon</h1>
-        <nav>
-            <ul>
-                <li><a href="#productos">Productos Recomendados</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>Promociona los Servicios de Amazon</h1>
     </header>
-
-    <main class="main-content">
-        <section id="productos">
-            <h2>Encuentra los mejores productos recomendados por nosotros</h2>
-            <div class="product">
-                <h3>Producto 1</h3>
-                <p>Descripción breve del producto 1. Este es un producto altamente recomendado.</p>
-                <a href="#" class="button">Ver en Amazon</a>
-            </div>
-            <div class="product">
-                <h3>Producto 2</h3>
-                <p>Descripción breve del producto 2. Este es otro producto que recomendamos.</p>
-                <a href="#" class="button">Ver en Amazon</a>
-            </div>
-            <div class="product">
-                <h3>Producto 3</h3>
-                <p>Descripción breve del producto 3. Un producto excelente para tus necesidades.</p>
-                <a href="#" class="button">Ver en Amazon</a>
-            </div>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="#" method="post">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Mi Sitio de Afiliación de Amazon. Todos los derechos reservados.</p>
-    </footer>
+    <div class="container">
+        <!-- Amazon Prime -->
+        <div class="service">
+            <h2>Amazon Prime</h2>
+            <img src="https://via.placeholder.com/1200x400" alt="Amazon Prime">
+            <p>Suscríbete a Amazon Prime y disfruta de envío rápido y gratuito, miles de películas y series de televisión en Prime Video, acceso ilimitado a más de mil libros con Prime Reading, y mucho más.</p>
+            <a class="cta-button" href="http://www.amazon.es/pruebaprime?tag=santyalizeri-21" target="_blank">Prueba Amazon Prime</a>
+        </div>
+        <!-- Amazon Music Unlimited -->
+        <div class="service">
+            <h2>Amazon Music Unlimited</h2>
+            <img src="https://via.placeholder.com/1200x400" alt="Amazon Music Unlimited">
+            <p>Disfruta de acceso ilimitado a más de 70 millones de canciones con Amazon Music Unlimited. Escucha las últimas novedades sin anuncios, descarga tu música favorita y disfruta del modo manos libres con Alexa.</p>
+            <a class="cta-button" href="https://www.amazon.es/gp/dmusic/promotions/AmazonMusicUnlimited?tag=santyalizeri-21" target="_blank">Prueba Amazon Music Unlimited</a>
+        </div>
+        <!-- Prime Video -->
+        <div class="service">
+            <h2>Prime Video</h2>
+            <img src="https://via.placeholder.com/1200x400" alt="Prime Video">
+            <p>Accede a miles de películas y series de televisión con Prime Video. Disfruta de contenido exclusivo y original en cualquier momento y lugar. Descarga tus favoritos para verlos sin conexión.</p>
+            <a class="cta-button" href="https://www.primevideo.com/?tag=santyalizeri-21" target="_blank">Prueba Prime Video</a>
+        </div>
+        <!-- Kindle Unlimited -->
+        <div class="service">
+            <h2>Kindle Unlimited</h2>
+            <img src="https://via.placeholder.com/1200x400" alt="Kindle Unlimited">
+            <p>Con Kindle Unlimited, lee sin límites y escoge entre más de un millón de libros. Descubre nuevos autores y géneros, y lee desde cualquier dispositivo. Todo por 9,99 € al mes.</p>
+            <a class="cta-button" href="https://www.amazon.es/kindle-dbs/hz/signup?tag=santyalizeri-21" target="_blank">Prueba Kindle Unlimited</a>
+        </div>
+        <!-- Lista de Bodas de Amazon -->
+        <div class="service">
+            <h2>Lista de Bodas de Amazon</h2>
+            <img src="https://via.placeholder.com/1200x400" alt="Lista de Bodas de Amazon">
+            <p>Crea tu Lista de Bodas en Amazon y elige entre millones de productos. Personaliza tu lista, compártela con amigos y familiares, y disfruta de entregas rápidas y gratuitas.</p>
+            <a class="cta-button" href="https://www.amazon.es/wedding?tag=santyalizeri-21" target="_blank">Crea tu Lista de Bodas</a>
+        </div>
+        <!-- Prime Student -->
+        <div class="service">
+            <h2>Prime Student</h2>
+            <img src="https://via.placeholder.com/1200x400" alt="Prime Student">
+            <p>Prime Student ofrece a los estudiantes universitarios todos los beneficios de Prime con 90 días de prueba y a mitad de precio de la suscripción Prime habitual. Disfruta de envío rápido, Prime Video, Prime Music y más.</p>
+            <a class="cta-button" href="https://www.amazon.es/gp/student/signup?tag=santyalizeri-21" target="_blank">Prueba Prime Student</a>
+        </div>
+        <!-- Prime Video Channels -->
+        <div class="service">
+            <h2>Prime Video Channels</h2>
+            <img src="https://via.placeholder.com/1200x400" alt="Prime Video Channels">
+            <p>Prime Video Channels te permite añadir suscripciones individuales a canales como StarzPlay, MUBI, BFI Player, Noggin y más, sin paquetes ni contratos. Disfruta de contenido exclusivo en cualquier dispositivo.</p>
+            <a class="cta-button" href="https://www.primevideo.com/storefront/channels?tag=santyalizeri-21" target="_blank">Prueba Prime Video Channels</a>
+        </div>
+        <!-- Prime Prueba primero, paga después -->
+        <div class="service">
+            <h2>Prime Prueba primero, paga después</h2>
+            <img src="https://via.placeholder.com/1200x400" alt="Prime Prueba primero, paga después">
+            <p>Con Prime Prueba primero, paga después, elige hasta 6 artículos de moda, pruébalos en casa por una semana y paga solo por lo que te quedes. Disfruta de devoluciones fáciles y sin riesgos.</p>
+            <a class="cta-button" href="https://www.amazon.es/b?node=15204742031&tag=santyalizeri-21" target="_blank">Prueba Prime Prueba primero, paga después</a>
+        </div>
+    </div>
 </body>
 </html>
 
