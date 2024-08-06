@@ -1,17 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Sitio de Afiliación</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio de Afiliación de Amazon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Bienvenidos a Mi Sitio de Afiliación de Amazon</h1>
-  <p>Encuentra los mejores productos recomendados por nosotros.</p>
-  
-  <!-- Añade enlaces de afiliación aquí -->
-  <a href="https://www.amazon.com/dp/PRODUCTO1/?tag=tu-id-afiliado" target="_blank">Producto 1</a><br>
-  <a href="https://www.amazon.com/dp/PRODUCTO2/?tag=tu-id-afiliado" target="_blank">Producto 2</a><br>
-  <a href="https://www.amazon.com/dp/PRODUCTO3/?tag=tu-id-afiliado" target="_blank">Producto 3</a><br>
+    <header>
+        <h1>Bienvenidos a Mi Sitio de Afiliación de Amazon</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos Recomendados</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section id="productos">
+            <h2>Encuentra los mejores productos recomendados por nosotros</h2>
+            <div class="product">
+                <h3>Producto 1</h3>
+                <p>Descripción breve del producto 1. Este es un producto altamente recomendado.</p>
+                <a href="#" class="button">Ver en Amazon</a>
+            </div>
+            <div class="product">
+                <h3>Producto 2</h3>
+                <p>Descripción breve del producto 2. Este es otro producto que recomendamos.</p>
+                <a href="#" class="button">Ver en Amazon</a>
+            </div>
+            <div class="product">
+                <h3>Producto 3</h3>
+                <p>Descripción breve del producto 3. Un producto excelente para tus necesidades.</p>
+                <a href="#" class="button">Ver en Amazon</a>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio de Afiliación de Amazon. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
+
